@@ -23,6 +23,7 @@ if "todos" not in st.session_state:
     st.session_state["todos"] = read_todos()
 
 st.header("ToDo App")
+st.text("Simple application")
 
 for i, t in enumerate(st.session_state["todos"]):
     # value=False: потому что иногда остается какой-то чекбокс включенным (почему-то)
